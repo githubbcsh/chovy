@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "dimibang_new";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.1/dimibang_new.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EBSHMJESaeronRA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSHMJESaeronRA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chosunilbo_myungjo";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "EBSHMJESaeronRA";
+  background-image: url(gb.jpg); /* 헤더에 직접 배경 이미지 설정 */
+  background-repeat: no-repeat;
+  background-size: cover; /* 이미지가 헤더 영역을 꽉 채우도록 설정 */
+  background-position: center center; /* 배경 이미지의 위치를 정 중앙으로 설정 */
+  padding: 2em 0; /* 헤더의 패딩을 늘려 크기를 키움 */
+  height: 900px;
+  width: 100%; /* 폭을 전체 화면으로 설정 */
+  position: relative;
+  overflow: hidden; /* 자식 요소가 헤더 영역을 넘지 않도록 설정 */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav .right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 20px; /* 간격을 줄임 */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em; /* 폰트 크기를 키움 */
+  padding: 10px 20px;
+  display: block;
+}
+
+.left , .right, .logo-container{
+  width: 33%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.logo {
+  height: 80px; /* 로고 크기 조절 */
+}
+
+.banner-content {
+  font-family: "dimibang_new";
+  position: absolute;
+  bottom: 20px; /* 아래로 20px 이동 */
+  left: 80px; /* 왼쪽으로 20px 이동 */
+  z-index: 1; /* 텍스트가 이미지 위에 오도록 설정 */
+  color: white;
+  text-align: left; /* 왼쪽 정렬 */
+}
+
+.banner-text h1 {
+  font-size: 3.5em; /* 글씨 크기를 줄임 */
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 2em; /* 글씨 크기를 줄임 */
+}
+
+.more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em; /* 글씨 크기를 줄임 */
+  border-radius: 5px;
+}
+
+.best-product {
+  font-family: "Chosunilbo_myungjo";
+  padding: 50px 0;
+  text-align: center;
+}
+
+.content {
+  background-color: #fff; /* 배경색 설정 */
+  background-image: url(https://bjenp.cafe24.com/img/main_bg_02.jpg); /* 배경 이미지 설정 */
+  background-repeat: no-repeat;
+  background-size: cover; /* 이미지가 섹션을 꽉 채우도록 설정 */
+  background-position: center center; /* 배경 이미지의 위치를 정 중앙으로 설정 */
+}
+
+.best-product h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item {
+  width: 300px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.about-us {
+  font-family: "Chosunilbo_myungjo";
+  display: flex;
+  padding: 50px;
+}
+
+.about-text {
+  flex: 1;
+  padding-left: 400px;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -800px; /* 왼쪽 여백을 줄임 */
+}
+
+.about-image img {
+  height: 800px;
+  width: 550px;
+  height: auto;
+}
+
+.signature {
+  display: inline-block; /* 블록 요소로 설정하여 줄바꿈 적용 */
+  vertical-align: top;
+  margin-top: 10px; /* 위쪽에 여백 추가 */
+  width: 70px; /* 이미지 크기 설정 */
+}
+
+footer {
+  background-color: #4a423f; /* 푸터 배경색 설정 */
+  color: #fff; /* 텍스트 색상 설정 */
+}
+
+.footer-top {
+  display: flex;
+}
+
+.footer-left {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8em; /* 텍스트 크기 설정 */
+  color: #ccc; /* 텍스트 색상 연하게 설정 */
+}
+
+.footer-left div {
+  margin-bottom: 10px; /* 항목 간의 간격 설정 */
+}
+
+.footer-right {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-right img {
+  border-radius: 25%;
+  width: 20px; /* 소셜 아이콘 크기 설정 */
+  height: 20px; /* 소셜 아이콘 크기 설정 */
+  margin: 0 5px; /* 아이콘 간의 간격 설정 */
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 가운데 정렬 */
+  padding: 20px;
+}
+
+.footer-image img {
+  width: 100px; /* 이미지 크기 설정 */
+  height: 100px; /* 이미지 크기 설정 */
+  padding: 10px;
+}
+
+.footer-text {
+  margin-left: 20px;
+  font-size: 0.8em; /* 텍스트 크기 설정 */
+  color: #ccc; /* 텍스트 색상 연하게 설정 */
+  text-align: justify; /* 텍스트를 양쪽 맞춤 */
+}
+
+.footer-text p {
+  margin: 3px 0; /* 텍스트 사이의 간격 설정 */
+}
